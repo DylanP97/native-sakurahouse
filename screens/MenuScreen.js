@@ -56,8 +56,8 @@ const MenuScreen = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              paddingBottom: 24,
               paddingTop: 24,
+              paddingBottom: 10,
             }}>
             <View className="w-[90vw] mx-auto">
               <UpperMenu
@@ -77,10 +77,10 @@ const MenuScreen = () => {
                 setItemOpen={setItemOpen}
               />
               <TouchableOpacity
-                className="bg-pink-100 mt-8 rounded-xl"
+                className="bg-pink-100 rounded-xl"
                 onPress={() => setSideOrderOpen(true)}>
                 <Text className="text-black text-center p-4 font-bold text-xl">
-                  View My Selection
+                  View Selection
                 </Text>
               </TouchableOpacity>
             </View>

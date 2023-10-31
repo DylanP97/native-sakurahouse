@@ -18,7 +18,7 @@ export default function CategoryCard({ category, categorySelected, setCategorySe
         />
       </View>
       <View className={`${categorySelected === category ? "bg-pink-100" : ""}`}>
-        <Text className={`${categorySelected === category ? "font-black border-b-2 border-pink-100" : "font-normal text-gray-300"}  text-lg w-full`}>{category.label}</Text>
+        <Text className={`${categorySelected === category ? "font-black border-b-2 border-pink-100" : "font-normal text-gray-300"}  w-full`}>{category.label}</Text>
       </View>
     </TouchableOpacity>
   );

@@ -25,32 +25,32 @@ export default function AppNavigation() {
           tabBarIcon: ({ focused }) => {
             if (route.name === "Home")
               return (
-                <HomeIcon color={focused ? themeColors.black : themeColors.white} size={24} />
+                <HomeIcon color={focused ? themeColors.black : themeColors.gray} size={24} />
                 );
             else if (route.name === "Where")
               return (
-                <MapPinIcon color={focused ? themeColors.black : themeColors.white} size={24} />
+                <MapPinIcon color={focused ? themeColors.black : themeColors.gray} size={24} />
               );
             else if (route.name === "Menu")
               return (
-                <ShoppingCartIcon color={focused ? themeColors.black : themeColors.white} size={24} />
+                <ShoppingCartIcon color={focused ? themeColors.black : themeColors.gray} size={24} />
               );
             else if (route.name === "Payment")
               return (
-                <BanknotesIcon color={focused ? themeColors.black : themeColors.white} size={24} />
+                <BanknotesIcon color={focused ? themeColors.black : themeColors.gray} size={24} />
               );
             else if (route.name === "Thanks")
               return (
-                <HandThumbUpIcon color={focused ? themeColors.black : themeColors.white} size={24} />
+                <HandThumbUpIcon color={focused ? themeColors.black : themeColors.gray} size={24} />
               );
           },
           tabBarActiveTintColor: themeColors.black,
-          tabBarInactiveTintColor: themeColors.white,
+          tabBarInactiveTintColor: themeColors.gray,
           tabBarStyle: {
             height: 100,
             paddingTop: 10,
             paddingBottom: 30,
-            backgroundColor: themeColors.primary,
+            backgroundColor: themeColors.white,
           },
         })}>
         <Tab.Screen name="Home" component={HomeScreen} />

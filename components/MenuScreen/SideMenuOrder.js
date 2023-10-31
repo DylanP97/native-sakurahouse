@@ -19,7 +19,7 @@ const SideMenuOrder = ({
 
   return (
       <ScrollView
-        className="px-4 pt-10 bg-white absolute right-0 w-[100%] min-h-[100%] h-full">
+        className="px-4 py-6 bg-white absolute right-0 w-[100%] min-h-[100%] h-full">
         <View className="flex flex-row justify-between items-start">
           <View className="flex flex-col">
             <Text className="text-lg font-black">My</Text>
@@ -27,7 +27,7 @@ const SideMenuOrder = ({
             <Text className="text-gray-400 text-xs mt-2 mb-6">{location}</Text>
           </View>
           <TouchableOpacity onPress={() => setSideOrderOpen(!sideOrderOpen)}>
-            <XMarkIcon color="black" size={30} />
+            <XMarkIcon color="black" size={36} />
           </TouchableOpacity>
         </View>
         {itemsSelected.map((item, index) => (
@@ -48,11 +48,11 @@ const SideMenuOrder = ({
         ))}
 
         <View className="flex flex-col items-center justify-between mt-4 mb-10">
-          <Text>Total</Text>
+          <Text className="text-gray-300 text-xs">Total Amount</Text>
           <Text className="font-bold text-lg">${totalAmount.toFixed(2)}</Text>
           <TouchableOpacity
             onPress={() => navigation.navigate("Payment")}
-            className="bg-pink-100 mt-8 rounded-xl">
+            className="bg-pink-100 my-6 rounded-xl w-full">
             <Text className="text-black text-center p-4 font-bold text-xl">
               Order
             </Text>

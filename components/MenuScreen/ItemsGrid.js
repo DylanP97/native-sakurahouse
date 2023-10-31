@@ -24,7 +24,7 @@ export default function ItemsGrid({ items, category, itemOpen, setItemOpen }) {
             setItemOpen={setItemOpen}
           />
         )}
-        firstItem={1}
+        firstItem={2}
         loop={false}
         inactiveSlideOpacity={0.3}
         sliderHeight={600}

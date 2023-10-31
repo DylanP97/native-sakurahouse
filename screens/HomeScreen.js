@@ -21,10 +21,10 @@ export default function HomeScreen() {
             Choose easily your food with our ordering kiosque.
           </Text>
           <TouchableOpacity
-            className="bg-pink-100 mt-8 rounded-xl"
+            className="bg-pink-100 mt-8 rounded-xl w-full"
             onPress={() => { navigation.navigate("Where")}}>
             <Text className="text-black text-center p-4 font-bold text-xl">
-              Touch to Start
+              Touch To Start
             </Text>
           </TouchableOpacity>
           <View className="mt-8 w-[100vw] aspect-[16/7]">

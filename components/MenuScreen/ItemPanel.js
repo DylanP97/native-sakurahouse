@@ -31,31 +31,34 @@ const ItemPanel = ({ itemOpen, setItemOpen, itemsSelected }) => {
           <View className="flex items-center justify-start w-full">
             <TouchableOpacity className="absolute top-2 bg-gray-500 h-1 w-6 rounded-xl" />
             <View className="absolute top-6 flex flex-col items-center justify-start w-full">
-              <View className="h-44 aspect-square w-full mb-4 self-center">
-                <Image
-                  className="w-full h-full rounded-xl"
-                  src={itemOpen.image}
-                  alt="item image"
-                />
+              <View className="flex flex-row w-full items-center gap-3">
+                <View className="w-[44%] aspect-square mb-4 self-start">
+                  <Image
+                    className="w-full h-full rounded-xl"
+                    src={itemOpen.image}
+                    alt="item image"
+                  />
+                </View>
+                <View className="w-[44%] aspect-square mb-4 flex flex-col justify-end">
+                  <Text className="text-xl font-black tracking-widest w-full">
+                    {itemOpen && itemOpen.title}
+                  </Text>
+                  <Text className="text-xs w-full">
+                    {itemOpen && "$" + itemOpen.price.toFixed(2)}{" "} - {" "}
+                    {itemOpen && itemOpen.specification} in a unit
+                  </Text>
+                  <Text className="text-sm font-bold w-full">
+                    {currentQtyInCart} unit{currentQtyInCart > 1 && "s"}{" "}
+                    currently in cart
+                  </Text>
+                </View>
               </View>
-              <Text className="text-xl text-center font-black tracking-widest w-full">
-                {itemOpen && itemOpen.title}
-              </Text>
-              <Text className="text-xl font-bold">
-                {itemOpen && "$" + itemOpen.price.toFixed(2)}
-              </Text>
-              <Text className="text-sm italic text-center mb-2 w-full">
-                {itemOpen && itemOpen.specification}
-              </Text>
-              <Text className="text-sm text-center font-bold w-full">
-                {currentQtyInCart} currently in cart
-              </Text>
-              <View className="w-full flex-row justify-center my-2">
+              <View className="w-full flex-row justify-center mb-4">
                 {currentQtyInCart > 0 && (
                   <TouchableOpacity
                     onPress={() => dispatch(removeItem(itemOpen))}
                     className="w-auto mx-1 px-6 py-4 bg-gray-100 rounded-xl">
-                    <Text className="text-black text-md font-black">
+                    <Text className="text-black font-black">
                       Remove From Cart
                     </Text>
                   </TouchableOpacity>
@@ -63,11 +66,12 @@ const ItemPanel = ({ itemOpen, setItemOpen, itemsSelected }) => {
                 <TouchableOpacity
                   onPress={() => dispatch(addItem(itemOpen))}
                   className="w-auto mx-1 px-6 py-4 bg-pink-100 rounded-xl">
-                  <Text className="text-black text-md font-black">
-                    Add To Cart
-                  </Text>
+                  <Text className="text-black font-black">Add To Cart</Text>
                 </TouchableOpacity>
               </View>
+              <Text className="text-xs italic text-center mb-2 w-full">
+                {itemOpen && itemOpen.description}
+              </Text>
             </View>
           </View>
         )}

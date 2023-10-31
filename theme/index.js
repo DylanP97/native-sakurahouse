@@ -1,6 +1,7 @@
 export const themeColors = {
    white: '#ffffff',
    black: '#000000',
+   gray: '#e5e7eb',
    primary: '#fce7f3',
    secondary: '#f9a8d4',
    accent: '#f472b6',

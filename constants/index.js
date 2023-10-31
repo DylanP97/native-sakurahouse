@@ -40,7 +40,7 @@ export const categories = [
     description: "Tempting treats for your sweet tooth.",
   },
   {
-    label: "Dishes",
+    label: "Hot Dishes",
     japaneseLabel: "食器",
     icon: dishes,
     description: "Delectable and diverse culinary creations.",
@@ -73,8 +73,8 @@ export const items = [
   {
     id: 8,
     price: 6.99,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Ramen",
     description:
       "Ramen is a popular Japanese dish that consists of Chinese-style wheat noodles served in a flavorful broth, typically garnished with various toppings. It has gained worldwide popularity for its rich and comforting flavors.",
@@ -95,7 +95,7 @@ export const items = [
   {
     id: 5,
     price: 6.99,
-    specification: "1 unit",
+    specification: "1 parfait",
     category: "Sweets",
     title: "Parfait",
     description:
@@ -150,7 +150,7 @@ export const items = [
   {
     id: 15,
     price: 6.6,
-    specification: "3 units",
+    specification: "3 temakis",
     category: "Sushis",
     title: "Temaki",
     description:
@@ -205,8 +205,8 @@ export const items = [
   {
     id: 12,
     price: 0,
-    specification: "1 unit offered by person",
-    category: "Dishes",
+    specification: "1 soup offered by person",
+    category: "Hot Dishes",
     title: "Miso Soup",
     description:
       "Miso soup is a traditional and nourishing Japanese soup known for its comforting and umami-rich flavors. The key ingredient is miso, a fermented soybean paste that comes in various colors and flavors, depending on the fermentation process and ingredients used. To prepare miso soup, dashi (a flavorful broth made from kombu seaweed and bonito flakes) is combined with miso paste, creating a flavorful base. Additional ingredients like tofu, seaweed, green onions, mushrooms, and sometimes fish or vegetables are added to enhance the soup's taste and nutritional value. This wholesome and soul-warming dish is a staple in Japanese cuisine, often served as a side dish or starter, providing a perfect balance of savory, earthy, and comforting notes that have made it a beloved classic both within Japan and across the world.",
@@ -216,8 +216,8 @@ export const items = [
   {
     id: 55,
     price: 8.99,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Udon",
     description:
       "Udon is a type of thick, chewy noodle that is a staple of Japanese cuisine. These noodles are made from wheat flour, water, and salt, and they have a neutral, slightly sweet flavor. Udon noodles are typically white or off-white in color and are known for their soft, doughy texture.",
@@ -269,8 +269,8 @@ export const items = [
   {
     id: 47,
     price: 11.80,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Okonomiyaki",
     description: "Okonomiyaki is a Japanese savory pancake or 'grilled as you like' dish made with a batter of flour, grated yam, shredded cabbage, and various ingredients such as meat, seafood, and vegetables. It's typically cooked on a griddle and topped with a sweet and savory sauce, mayonnaise, and bonito flakes.",
     image: "https://res.cloudinary.com/dnhq4fcyp/image/upload/v1697284124/okonomiyaki_ufme0k.jpg",
@@ -287,8 +287,8 @@ export const items = [
   {
     id: 49,
     price: 5.70,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Soba",
     description: "Soba is a type of Japanese noodle made from buckwheat flour or a mixture of buckwheat and wheat flour. Soba noodles are thin and have a slightly nutty flavor. They can be served in various dishes, including hot broth (soba soup) or cold with a dipping sauce. Soba is a staple in Japanese cuisine and is known for its versatility and wholesome qualities.",
     image: "https://res.cloudinary.com/dnhq4fcyp/image/upload/v1697284127/soba_wcgexx.jpg",
@@ -296,8 +296,8 @@ export const items = [
   {
     id: 52,
     price: 6.99,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Sukiyaki",
     description: "Sukiyaki is a popular Japanese hot pot dish traditionally prepared with thinly sliced beef, tofu, vegetables (such as mushrooms, scallions, and Napa cabbage), and glass noodles, all simmered in a savory and sweet soy-based broth. The ingredients are cooked at the table in a shallow, wide skillet or a specialized sukiyaki pan. Once the ingredients are cooked, they are typically dipped in beaten raw egg before being consumed. Sukiyaki is known for its delicious blend of flavors and is a social and comforting meal often enjoyed with family and friends.",
     image: "https://res.cloudinary.com/dnhq4fcyp/image/upload/v1697284128/sukiyaki_jp2ibq.jpg"
@@ -305,8 +305,8 @@ export const items = [
   {
     id: 53,
     price: 6.79,
-    specification: "1 unit",
-    category: "Dishes",
+    specification: "1 dish",
+    category: "Hot Dishes",
     title: "Takoyaki",
     description: "Takoyaki is a popular Japanese street food and snack. These are small, spherical, savory snacks made from a batter consisting of wheat flour and dashi (a Japanese fish stock). The batter is typically filled with small pieces of octopus, pickled ginger, and green onions. The mixture is cooked in a special, ball-shaped takoyaki pan, which gives the snacks their distinctive round shape. Once cooked to a golden-brown hue, they are typically topped with takoyaki sauce, mayonnaise, bonito flakes, and seaweed flakes. Takoyaki has a crispy exterior and a soft, molten center, making them a flavorful and enjoyable treat.",
     image: "https://assets.afcdn.com/recipe/20211021/122979_w1024h576c1cx1060cy707.webp"
@@ -315,7 +315,7 @@ export const items = [
     id: 52,
     price: 6.59,
     specification: "5 yakitory",
-    category: "Dishes",
+    category: "Hot Dishes",
     title: "Yakitory",
     description: "Yakitori is a popular Japanese dish consisting of skewered and grilled pieces of bite-sized chicken, often marinated in a savory, soy-based sauce. The word 'yakitori' can be broken down into 'yaki' (grilled) and 'tori' (bird or chicken), indicating its main ingredient. The chicken pieces are skewered, usually alternating with pieces of scallions or other vegetables, and then grilled until they develop a delicious charred and smoky flavor. Yakitori is often served with a side of tare sauce (a sweet and savory glaze), and it's a beloved Japanese street food and izakaya (pub) favorite.",
     image: "https://res.cloudinary.com/dnhq4fcyp/image/upload/v1697284130/yakitori_a568kg.jpg"
